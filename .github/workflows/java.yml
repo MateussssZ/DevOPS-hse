@@ -40,5 +40,5 @@ jobs:
           repo_token: "${{ secrets.TOKEN }}"
           automatic_release_tag: "latest"
           title: "1.0.0"
-          files: ./*.jar
+          files: target/*.jar
           
