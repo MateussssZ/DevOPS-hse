@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class Person {
+public class Person { //Класс, отвечающий за личность
     private String name;
     private String surname;
     private String patronymic;
