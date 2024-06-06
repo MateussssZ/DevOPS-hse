@@ -12,7 +12,8 @@ public class Main {
         String birthdate = in.next();
         Person person1 = new Person(name,surname, patronymic,birthdate);
         person1.printInfo();
-        int veryveryveryveryverybadvariablename = 1;
+        int veryveryveryveryverybadvariablename=1;
+        int veryveryveryveryverybadvariablename2=1;
         System.out.println(veryveryveryveryverybadvariablename);
     }
 }
