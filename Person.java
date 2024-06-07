@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class Person { //Класс, отвечающий за личность
+public class Person { //Person-class
     private String name;
     private String surname;
     private String patronymic;
@@ -12,10 +12,10 @@ public class Person { //Класс, отвечающий за личность
         this.surname = surname;
         this.patronymic = patronymic;
         this.birthdate = new Birthdate(date);
-        if (this.patronymic.substring(this.patronymic.length() - 1).equals("а")) {
-            this.gender = "Женский";
+        if (this.patronymic.substring(this.patronymic.length() - 1).equals("a")) {
+            this.gender = "Female";
         } else {
-            this.gender = "Мужской";
+            this.gender = "Male";
         }
     }
 
@@ -36,8 +36,8 @@ public class Person { //Класс, отвечающий за личность
     }
 
     public void printInfo() {
-        System.out.println("ФИО: " + getSurname() + " " + getName() + " " + getPatronymic()
-                + "\nВозраст: " + this.birthdate.countAge()
-                + "\nПол: " + getGender());
+        System.out.println("NSP: " + getSurname() + " " + getName() + " " + getPatronymic()
+                + "\nAge: " + this.birthdate.countAge()
+                + "\nGender: " + getGender());
     }
 }

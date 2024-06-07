@@ -17,26 +17,26 @@ public class Birthdate {
         int curr_day = Integer.parseInt(curr.substring(8,10));
 
         if (this.day>31 || this.month>12 || this.year>curr_year){
-            System.out.println("Вы ввели невалидную дату!");
+            System.out.println("You`ve entered invalid data!");
             throw new IOException();
         }
 
         if (this.year==curr_year){
             if (this.month>curr_month || (this.month==curr_month && this.day==curr_day)){
-                System.out.println("Вы ввели невалидную дату!");
+                System.out.println("You`ve entered invalid data!");
                 throw new IOException();
             }
         }
 
         if ((this.month == 4 || this.month==6 || this.month==9 || this.month==11) && this.day>30){
-            System.out.println("Вы ввели невалидную дату!");
+            System.out.println("You`ve entered invalid data!");
             throw new IOException();
         }
 
         if (this.month==2){
             if (this.day>28){
                 if (!(this.year%4==0 && this.day==29)) {
-                    System.out.println("Вы ввели невалидную дату!");
+                    System.out.println("You`ve entered invalid data!");
                     throw new IOException();
                 }
             }
